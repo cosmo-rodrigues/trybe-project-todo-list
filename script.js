@@ -1,3 +1,4 @@
+// Add to my own repository
 // Restore information saved at local storage.
 document.getElementById('lista-tarefas').innerHTML = localStorage.getItem('saved');
 
@@ -10,7 +11,7 @@ function addProduct() {
   itensList.innerText = document.getElementById('texto-tarefa').value;
   itensList.className = 'itens-list';
   lista.appendChild(itensList);
-  itensList.value = '';
+  document.getElementById('texto-tarefa').value = '';
   itensList.focus();
 }
 // Call the function addProduct.
